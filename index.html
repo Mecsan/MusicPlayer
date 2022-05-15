@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music</title>
+    <link rel="icon" type="image/x-icon" href="music.png">
+     <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <header>
+        <img src="music.png">
+        <h1><a href="index.html" >My music</a></h1>
+        <section class="search">
+            <input id="se" type="text" name="search" placeholder="enter your search">
+        </section>
+        
+    </header>
+    <section class="S_search">
+        <input id="S_se" type="text" name="search" placeholder="enter your search">
+    </section>
+
+
+    <!-- // creating musicplayer for small device-width -->
+    <div class="musicplayer">
+        <div class="close">+</div>
+        <div id="s_txt"></div>
+        <div id="s_box"></div>
+        <div class="s_progress">
+            <div>
+                <input id="s_progre" type="range" value="0" oninput="s_change()">
+            </div>
+        </div>
+        <div class="btns">
+            <button id="s_pre">
+                << </button>
+                    <button id="s_play">></button>
+                    <button id="s_nxt">>></button>
+        </div>
+    </div>
+
+
+    <!-- all the song will be display here? -->
+
+
+    <section class="main">
+        <div class="song_sec random">
+            <h1 style="color:white;padding: 10px 30px ;">Random music</h1>
+            <hr>
+            <div id="song">
+            </div>
+        </div>
+
+     
+
+
+        <div class="contain">
+            <div class="temp">
+                <div class="imgbox" style="width:70px;
+                height:70px  ">
+                    <img id="image" src="">
+                </div>
+                <div class="slide">
+                    <div id="text"></div>
+                </div>
+            </div>
+            <div class="temp2">
+                <audio id="audio" src="" preload="metadata">
+
+                </audio>
+
+                <div class="btns">
+                    <button id="pre">
+                        << </button>
+                            <button class="sh" id="play">></button>
+                            <button id="nxt">>></button>
+                </div>
+                <div class="progress">
+                    <!-- <div class="time">
+                        <span id="cu_time">2:09</span>
+                        <span id="to_time">7:90</span>
+                    </div> -->
+                    <div>
+                        <input id="progre" type="range" value="0" oninput="change_()">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </section>
+    <div id="down" title="close/open the controls of the music">...</div>
+   
+
+
+
+
+    <script src="music.js"></script>
+</body>
+
+</html>
