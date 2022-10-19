@@ -28,7 +28,7 @@ var all_song = [{
     "img": "tu akhe dekhle.jpg"
 },
 {
-    "name": "Kacha Badam",
+    "name": "Kacha badam",
     "singer": "Bhuban Bandyakar",
     "img": "kacha badam.jpg"
 },
@@ -102,7 +102,6 @@ down.addEventListener('click', function () {
     if (x.style.bottom != '-200px') {
         x.style.bottom = '-200px';
         down.style.bottom = '0px';
-        main.style.display = 'none';
         document.body.style.overflow = 'auto';
     }
     else {
@@ -305,22 +304,7 @@ function s_change() {
 function s_close() {
     mu.style.top = '100%';
 }
-function show_main() {
-    if (innerWidth <= '500') {
-        return;
-    }
-    if (main.style.display != 'block') {
-        main.style.display = 'block';
-        document.body.style.overflow = 'hidden';
-
-    }
-    else {
-        main.style.display = 'none';
-        document.body.style.overflow = 'auto';
-
-    }
-
-}
+ 
 
 
 
